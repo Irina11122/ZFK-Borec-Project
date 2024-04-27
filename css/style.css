@@ -1,0 +1,488 @@
+/* Fonts */
+@import url(./fonts.css);
+
+body {
+  background-image: url(../images/background.svg);
+  font-family: "montserrat regular";
+}
+
+/* ---------------------------------------------------- Landing Page Starts Here ---------------------------------------------------- */
+/* Hero Section Background */
+.hero-section {
+  background-image: url(../images/hero-photo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+/* Red Text */
+.text-red {
+  color: #a41f23;
+}
+
+/* ------------------------------                        Header Starts Here                      -------------------------------------- */
+
+/* Logo Image */
+.logo-img {
+  position: absolute;
+  top: 15px;
+  left: 3%;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+
+/* Header Background */
+.bg-red {
+  background: #a41f23cb;
+}
+
+/* All Header Divs */
+header div {
+  display: flex;
+
+  /* Header h3 Text */
+  & .p-10 {
+    padding-left: 17%;
+  }
+
+  /* Header Icons Hover */
+  & img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.15))
+      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* Language Change Hover */
+  & span:hover {
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 8px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+/* ------- Menu Links Starts Here ------- */
+
+/* List Item Style */
+.nav-item .nav-link {
+  background-color: none;
+  color: #fff;
+  font-weight: 200;
+  padding: 13px;
+
+  /* Background Color on Active Classes */
+  &:active {
+    background-color: #a41f23;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 8px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Width of the Navbar */
+.navbar-expand .navbar-nav .nav-link {
+  padding: 13px 42px;
+}
+
+/* Active Link Color */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+/* Dropdwon Menu Style */
+.navbar-nav .dropdown-menu {
+  background: #a41f23;
+  border-radius: 0;
+  padding: 0;
+}
+
+/*  ------- Menu Links Ends Here ------- */
+
+/* Margin Bottom: 70px */
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+/* Dropdown Menu Links */
+.navbar-nav .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid rgba(248, 240, 241, 0.7);
+  text-align: center;
+  padding: 7px 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: #c16a6d;
+  }
+}
+
+/* Active */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  font-weight: bold;
+}
+
+/* ------------------------------------                Header Finish Here                 --------------------------------------------- */
+
+/* ------------------------------------          Text Section  Start From Here            --------------------------------------------- */
+/* Position Absolute - Bottom: 10% For Text Section "Aktuelno" */
+.bottom-10 {
+  bottom: 10%;
+}
+/* ------------------------------------                Text Section Ends Here             --------------------------------------------- */
+/* -----------     Index Page First Card(Sledenje na Poeni)     ---------- */
+
+/* Margin Top: -20px */
+.card-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+/* Card Style */
+.first-card {
+  background: linear-gradient(
+    135deg,
+    #f8f0f1 1.87%,
+    rgba(248, 240, 241, 0.68) 38.93%,
+    rgba(248, 240, 241, 0.4) 68.8%,
+    rgba(248, 240, 241, 0) 97.36%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  width: 599px;
+  padding: 20px 40px;
+  border-radius: 10% /70%;
+  z-index: 1;
+
+  /* Image Height and Width */
+  & img {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Image Margin Top: -45px */
+  & .mt-10 {
+    margin-top: -45px;
+  }
+}
+
+/*  Animation Effect on Hover 3 Cards */
+.arrow-landing-page:hover {
+  fill: #fff;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3))
+    drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.15));
+  transition: all 0.5s ease-in-out;
+}
+
+/* -------------------                        Index Carousel Starts Here                                  ----------------------------- */
+
+/* Carousel Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 100%;
+  fill: #fff;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.3))
+    drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.15));
+}
+/* Carousel Background */
+.carousel-section-bg {
+  background: linear-gradient(
+    #a41f23,
+    #a41f23d2,
+    #a41f2394,
+    #a41f2364,
+    #9a1c2030
+  );
+  color: #fff;
+}
+
+/*  ------------------                         Index Carousel Ends Here                                   ----------------------------- */
+
+/* ----------------------Index Uspesni Prikazni Card----------------------------- */
+.uspesni-prikazni-sekcija {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ------------------------------------------------------ Landing Page Ends Here ------------------------------------------------------ */
+
+/* ----------------------------------------------------- Projects Page Starts Here ---------------------------------------------------- */
+
+/* Projects Page Hover */
+.projects:hover .projects-title {
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Background About Us,Projects,Contact,Competitions,First Team,Camps,Galery */
+.about-us-main {
+  background-image: url(../images/about-us-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  /* Text at the Bottom of the Image */
+  & section {
+    margin-top: 200px;
+    padding-bottom: 40px;
+    color: #fff;
+  }
+}
+
+/* ----------------- Za Klubot Page / Second Carousel Text at the Bottom of the Image ------------------ */
+
+/* --------------------------- Kampovi Page / Third Carousel Starts Here ------------------------------- */
+
+/* Pushes the Content to the Left */
+.carousel-indicators {
+  left: 0;
+  display: contents;
+}
+
+/* Style of the Content */
+.carousel-indicators [data-bs-target] {
+  background-color: transparent;
+  width: 230px;
+  height: 30px;
+  text-indent: 0;
+  margin-bottom: 30px;
+}
+
+/* Line Between Indicator Buttons */
+.carousel-indicators .line::after {
+  content: "";
+  border-right: 1px solid #12001264;
+  padding-left: 35px;
+}
+
+/* Active Indicator Buttons */
+.carousel-indicators .active {
+  font-weight: bolder;
+}
+
+/* -------------------------- Kampovi Page / Third Carousel Ends Here ----------------------------------
+
+
+/* -------------------------- Natprevari Page / First Card Starts Here ---------------------------------- */
+
+/* Natprevari Page Image Size */
+.height-img {
+  height: 240px;
+}
+
+/* Natprevari Page / First Card */
+.card-bg-red {
+  background: var(
+    --Gradient-Red,
+    linear-gradient(
+      136deg,
+      #a41f23 2.09%,
+      rgba(164, 31, 35, 0.82) 28.08%,
+      rgba(164, 31, 35, 0.58) 62.31%,
+      rgba(164, 31, 35, 0.39) 78.82%,
+      rgba(164, 31, 35, 0) 99.81%
+    )
+  );
+  border-radius: 30px;
+}
+
+/* Natprevari Page / Card Background Gray */
+.card-bg-gray {
+  background: #e1dede;
+}
+
+/* Natprevari Page / Card Background Light */
+.card-bg-light {
+  background: linear-gradient(45deg, #f8f0f1, #f8f0f1ad, #f8f0f165, #f8f0f100);
+}
+
+/* Margin Bottom: 90px */
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+/*  Text Align : Justify */
+.text-align-justify {
+  text-align: justify;
+}
+
+/* Margin Bottom: 120px */
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+/* ---------------- Za Klubot/Rakovodstvo Page / Second Carousel Indicator Buttons Style --------------- */
+
+/* Za Klubot Page / Background Image */
+.za-klubot-bg {
+  background-image: url(../images/za-klubot-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/* Carousel-2 Card */
+.carousel-2-card {
+  background: linear-gradient(
+    136deg,
+    rgba(248, 240, 241, 0) 0.5%,
+    rgba(248, 240, 241, 0.68) 23.9%,
+    rgba(248, 240, 241, 0.4) 24.48%,
+    #fff 61.09%
+  );
+  display: flex;
+  gap: 100px;
+  align-items: start;
+  height: 500px;
+  padding: 20px 100px;
+}
+
+/* Carousel-2 Image Bottom */
+.img-bottom {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+}
+
+/* Carousel-2 Image Card */
+.carousel-2-image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  & img {
+    width: 300px;
+  }
+}
+
+/* CArousel-2 Card Paragraph */
+.carousel-2-card p {
+  font-size: 13px;
+}
+
+/* Kampovi / Third Carousel Fade  Effect */
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* a Links Style */
+.a {
+  text-decoration: none;
+  color: #120012;
+}
+
+/* ------------------------------------------ Gallery Starts Here -------------------------------------- */
+
+/* Gallery Text Hover */
+.galerija-text:hover h4,
+a {
+  color: #a41f23;
+  transition: all 0.4s ease-in-out;
+}
+
+/* ------------------------------------------ Gallery Ends Here ---------------------------------------- */
+
+/* -------------------------------------------------- Footer ------------------------------------------- */
+/* Footer Icons Section */
+.icons {
+  background: linear-gradient(
+    135deg,
+    #f8f0f1 1.87%,
+    rgba(248, 240, 241, 0.68) 38.93%,
+    rgba(248, 240, 241, 0.4) 68.8%,
+    rgba(248, 240, 241, 0) 97.36%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5% 30px;
+}
+
+/* Footer Text Section Starts Here */
+.text-container {
+  background-color: #a41f23;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer Cards */
+.text-card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-self: start;
+  font-weight: 200;
+  gap: 7px;
+}
+
+/* Footer Active Card */
+.text-card .active {
+  font-weight: bold;
+}
+
+/* Footer a Links */
+footer a {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Footer Margin-Top: -89px */
+.footer-m-top {
+  margin-top: -89px;
+}
+
+/* Footer Margin-Top: -50px */
+.footer-m-top-1 {
+  margin-top: -50px;
+}
+
+/* Footer Text Section Ends Here */
+
+/* Active Link */
+.active {
+  font-weight: bold;
+}
+
+.icons {
+  overflow: hidden;
+}
+.icons div {
+  display: flex;
+  gap: 70px;
+  animation: move 40s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-1100px);
+  }
+
+  100% {
+    transform: translateX(1290px);
+  }
+}
+/* ---------------------------------------------------------------------------------------------------- */
